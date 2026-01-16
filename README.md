@@ -1,4 +1,4 @@
-# Professional Portfolio: Goodness Akyengo
+# Portfolio: Goodness Akyengo
 
 An **Essentialist** portfolio designed to showcase the intersection of scientific rigour and data science. Built with a focus on performance, typography, and professional narrative.
 
