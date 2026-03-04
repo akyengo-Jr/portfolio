@@ -14,7 +14,7 @@ gtag('config', 'G-1CDW5R4K6X');
             'assets/img/life_expectancy/7.png',
             'assets/img/life_expectancy/6.png',
             'assets/img/life_expectancy/5.png',
-            'assets/img/life_expectancy/4https://life-expectancy-eda.streamlit.app/.png'
+            'assets/img/life_expectancy/4.png'
         ],
         'streamlit-deployment': [
             'assets/img/streamlit-deployment/1.jpg',
