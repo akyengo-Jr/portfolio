@@ -91,6 +91,134 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 .project-info p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 25px; }
 .project-link { text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.9rem; }
 
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    aspect-ratio: 16/9;
+    background: #f5f5f5; /* placeholder background */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+/* Loading placeholder */
+.carousel-slide[src=""] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.carousel-container:hover .carousel-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-btn.hidden {
+    display: none;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+    background: rgba(0,0,0,0.3);
+    padding: 6px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.carousel-dot:hover {
+    background: rgba(255,255,255,0.8);
+    transform: scale(1.2);
+}
+
+.carousel-dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Image counter */
+.carousel-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+}
+
 /* Services */
 .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .service-item { padding: 45px; background: var(--bg-card); border-radius: 6px; }
@@ -133,3 +261,4 @@ footer { padding: 100px 0 50px; text-align: center; }
     .hero h1 { font-size: 2.8rem; }
     .container { padding: 0 20px; }
 }
+

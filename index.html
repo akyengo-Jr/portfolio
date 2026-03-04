@@ -67,43 +67,60 @@
         </div>
     </header>
 	
-<section id="work" class="section">
-    <div class="container">
-        <h2 class="section-title">Selected Case Studies</h2>
-        <div class="project-grid">
-            <!-- Life Expectancy Dashboard Project -->
-            <article class="project-card reveal">
-                <div class="project-img-wrapper">
-                    <img src="assets/img/life-expectancy-viz.jpg" alt="Life Expectancy Dashboard Interface">
-                </div>
-                <div class="project-info">
-                    <span class="category">Interactive Data Dashboard</span>
-                    <h3>Life Expectancy Explorer</h3>
-                    <p>An interactive Streamlit dashboard that lets you explore global health data, filter by country and year, and see instant visualisations of what factors really affect how long people live. Built because I got tired of static charts.</p>
-                    <a href="https://github.com/akyengo-jr/Life_expectancy" target="_blank" class="project-link">View on GitHub →</a>
-                </div>
-            </article>
+    <section id="work" class="section">
+        <div class="container">
+            <h2 class="section-title">Selected Case Studies</h2>
+            <div class="project-grid">
+                <!-- Life Expectancy Dashboard Project with Dynamic Carousel -->
+    <article class="project-card reveal" data-project="life-expectancy">
+        <div class="carousel-container" id="carousel-life-expectancy">
+            <div class="carousel-track">
+                <!-- Images will be loaded here automatically -->
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+            <div class="carousel-dots"></div>
+        </div>
+        <div class="project-info">
+            <span class="category">Interactive Data Dashboard</span>
+            <h3>Life Expectancy Explorer</h3>
+            <p>An interactive Streamlit dashboard that lets you explore global health data, filter by country and year, and see instant visualisations of what factors really affect how long people live. Built because I got tired of static charts.</p>
+            <div style="display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+                <a href="YOUR_STREAMLIT_APP_URL" target="_blank" class="project-link">
+                    <i class="fa-solid fa-rocket"></i> Live Demo
+                </a>
+                <a href="https://github.com/akyengo-jr/Life_expectancy" target="_blank" class="project-link">
+                    <i class="fa-brands fa-github"></i> Code
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Second Project with its own folder -->
+    <article class="project-card reveal" data-project="streamlit-deployment">
+        <div class="carousel-container" id="carousel-streamlit">
+            <div class="carousel-track">
+                <!-- Images will be loaded here automatically -->
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+            <div class="carousel-dots"></div>
+        </div>
+        <div class="project-info">
+            <span class="category">Deployment & UX</span>
+            <h3>Interactive Data Interfaces</h3>
+            <p>Development of bespoke Streamlit applications to make complex data models accessible to non-technical stakeholders in real-time.</p>
+            <a href="https://github.com/akyengo-jr" target="_blank" class="project-link">View Repository →</a>
+        </div>
+    </article>
+            </div>
             
-            <!-- Second Project - Interactive Data Interfaces -->
-            <article class="project-card reveal">
-                <div class="project-img-wrapper">
-                    <img src="assets/img/streamlit-deployment.jpg" alt="Streamlit Application Interface">
-                </div>
-                <div class="project-info">
-                    <span class="category">Deployment & UX</span>
-                    <h3>Interactive Data Interfaces</h3>
-                    <p>Development of bespoke Streamlit applications to make complex data models accessible to non-technical stakeholders in real-time.</p>
-                    <a href="https://github.com/akyengo-jr" target="_blank" class="project-link">View Repository →</a>
-                </div>
-            </article>
+            <!-- View All Projects Link -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://github.com/akyengo-jr" target="_blank" class="project-link" style="font-size: 1.1rem;">View All Projects on GitHub →</a>
+            </div>
         </div>
-        
-        <!-- View All Projects Link -->
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://github.com/akyengo-jr" target="_blank" class="project-link" style="font-size: 1.1rem;">View All Projects on GitHub →</a>
-        </div>
-    </div>
-</section>
+    </section>
 
     <section id="services" class="section alt-bg">
         <div class="container">
