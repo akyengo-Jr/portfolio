@@ -11,10 +11,10 @@ gtag('config', 'G-1CDW5R4K6X');
     // Image configuration - update this when you add new screenshots
     const PROJECT_IMAGES = {
         'life-expectancy': [
-            'assets/img/life-expectancy/1.jpg',
-            'assets/img/life-expectancy/2.jpg',
-            'assets/img/life-expectancy/3.jpg',
-            'assets/img/life-expectancy/4.jpg'
+            'assets/img/life_expectancy/7.png',
+            'assets/img/life_expectancy/6.png',
+            'assets/img/life_expectancy/5.png',
+            'assets/img/life_expectancy/4.png'
         ],
         'streamlit-deployment': [
             'assets/img/streamlit-deployment/1.jpg',
